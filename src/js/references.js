@@ -1,6 +1,8 @@
 export default {
-    catSelector: document.querySelector('.breed-select'),
+    gallery: document.querySelector('.gallery'),
     loaderText: document.querySelector('.loader'),
     errorText: document.querySelector('.error'),
-    catInfo: document.querySelector('.cat-info'),
+    searchForm: document.querySelector('.search-form'),
+    // searchInput: document.querySelector('.search-input'),
+    moreButton: document.querySelector('.load-more'),
 };

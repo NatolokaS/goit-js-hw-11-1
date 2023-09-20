@@ -1,6 +1,55 @@
 h1 {
   font-size: 24px;
 }
+
+.nav-container {
+  height: 40px;
+  background: #8141e8;
+  display: flex;
+  justify-content: center;
+}
+
+.search-form {
+  align-items: center;
+  margin: auto;
+  padding: auto;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  align-items: center;
+  /* margin: 10px; */
+  background: #d6c4f3;
+  width: 300px;
+}
+
+#search-input,
+#search-input:hover,
+#search-input:focus,
+#search-input:active {
+  background: #d6c4f3;
+  border-color: transparent;
+  border: none;
+  width: 100%;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.search-button {
+  border-color: #c5a6f8;
+  border-radius: 3px;
+  background-color: #d6c4f3;
+}
+
 p {
   font-size: 12px;
 }
@@ -32,9 +81,30 @@ img {
   gap: 40px;
 }
 
-.box-img {
-  display: flex;
+.gallery {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+}
+
+.photo-card {
   align-items: center;
+}
+
+img {
+  height: 300px;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info-item {
+  direction: row;
+  width: 10px;
 }
 
 .box {
@@ -50,6 +120,7 @@ img {
   border-radius: 10px;
   overflow: hidden;
 }
+
 .loader:after {
   content: '';
   position: absolute;
@@ -58,6 +129,11 @@ img {
   height: 100%;
   width: 0;
   animation: 6s prog ease-in infinite;
+}
+
+.load-more {
+  margin: 40px auto;
+  width: 200px;
 }
 
 @keyframes prog {

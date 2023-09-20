@@ -3,7 +3,7 @@ import ref from './references';
 
 const { catSelector, loaderText } = ref;
 export  function fetchError() {
-  catSelector.classList.remove('is-hidden');
+  // catSelector.classList.remove('is-hidden');
   loaderText.classList.replace('loader', 'is-hidden');
 
   Notify.failure(
