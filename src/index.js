@@ -97,7 +97,7 @@ let lightbox = new SimpleLightbox('.photo-card a', {
 
 function onClickMore() {
   page += 1;
-    getCards(keyOfSearch, page, perPage)
+    getCards(searchKey, page, perPage)
     .then(data => {
       const searchResults = data.hits;
       const numberOfPage = Math.ceil(data.totalHits / perPage);

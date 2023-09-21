@@ -45,6 +45,7 @@ h1 {
 }
 
 .search-button {
+  margin-left: 10px;
   border-color: #c5a6f8;
   border-radius: 3px;
   background-color: #d6c4f3;
@@ -56,10 +57,7 @@ p {
 .breed-select {
   max-width: 600px;
 }
-img {
-  display: block;
-  max-width: 100%;
-}
+
 .is-hidden {
   position: absolute;
   width: 1px;
@@ -82,8 +80,9 @@ img {
 }
 
 .gallery {
+  margin-top: 20px;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto;
   gap: 20px;
 }
 
@@ -92,7 +91,17 @@ img {
 }
 
 img {
-  height: 300px;
+  width: 100%;
+  height: 200px;
+  border: 1px solid #ebf1f4;
+  border-radius: 8px;
+}
+
+.img_wrapper {
+  display: block;
+  /* height: 300px; */
+  /* display: flex; */
+  align-items: center;
 }
 
 .info {
@@ -132,8 +141,30 @@ img {
 }
 
 .load-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: #685f81;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #a698f0;
   margin: 40px auto;
-  width: 200px;
+}
+
+.load-more:hover,
+.load-more:focus {
+  background-color: #898dbe;
+}
+
+.icon-circle-down {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
 }
 
 @keyframes prog {
